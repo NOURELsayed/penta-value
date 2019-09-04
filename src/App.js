@@ -1,14 +1,14 @@
 import React from 'react';
 import Main from './components/main'
-import { Grommet } from 'grommet'
+import { Grommet, Box } from 'grommet'
 
 
 function App() {
   return (
 <Grommet full>
-<div className="App">
+<Box className="App">
       <Main/>
-    </div>
+    </Box>
 </Grommet>
   );
 }
