@@ -1,13 +1,15 @@
 import React from 'react';
-import Main from './component/main'
-// import List from './component/Post'
+import Main from './components/main'
+import { Grommet } from 'grommet'
+
 
 function App() {
   return (
-    <div className="App">
+<Grommet full>
+<div className="App">
       <Main/>
-      {/* <List/> */}
     </div>
+</Grommet>
   );
 }
 

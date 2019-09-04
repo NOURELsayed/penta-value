@@ -9,7 +9,6 @@ export default class MainPage extends Component {
         this.state = {
             comments: []
         };
-        this.getComments = this.getComments.bind(this);
     }
     componentWillMount() {
         this.getComments();
@@ -30,6 +29,7 @@ export default class MainPage extends Component {
     }
 
     render() {
+        const { comments } = this.state
         return (
             <div>
                 <Grommet theme full>
@@ -40,7 +40,7 @@ export default class MainPage extends Component {
                         alignSelf='center'
                     >
                           <ul>
-                            {this.state.comments.map(function (comment, index) {
+                            {comments.map((comment, index)=> {
                                 return ( <Comment
                                     key={index}
                                     name={comment.name}
