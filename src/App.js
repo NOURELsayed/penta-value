@@ -1,15 +1,14 @@
 import React from 'react';
-import Main from './components/main'
 import { Grommet, Box } from 'grommet'
-
+import Routing from './containers/routing'
 
 function App() {
   return (
-<Grommet full>
-<Box className="App">
-      <Main/>
-    </Box>
-</Grommet>
+    <Grommet full>
+      <Box className="App">
+        <Routing/>
+      </Box>
+    </Grommet>
   );
 }
 
